@@ -1,8 +1,10 @@
 import { gql, useQuery } from "@apollo/client";
+import { Link } from "react-router-dom";
 
 const ALL_MOVIES = gql`
   {
     allMovies {
+      id
       title
     }
   }
@@ -20,7 +22,9 @@ export const Movies = () => {
   return (
     <div>
       {data.allMovies.map((item: any) => (
-        <li key={item.id}>{item.title}</li>
+        <li key={item.id}>
+          <Link to={`movies/${item.id}`}>{item.title}</Link>
+        </li>
       ))}
     </div>
   );
