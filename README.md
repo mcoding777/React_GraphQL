@@ -10,3 +10,10 @@
 - tailwind ^3.1.4
 - graphql ^16.5.0
 - apollo/client ^3.6.9
+
+## 실행 방법
+
+1. Apollo_Server 레포지토리 클론 후 실행 (https://github.com/mcoding777/Apollo_Server)
+2. git clone https://github.com/mcoding777/React_GraphQL.git
+3. npm install
+4. npm start
